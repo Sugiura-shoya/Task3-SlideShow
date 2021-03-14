@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <title>slickのスライドショー</title>
+        <style>
+            .slick-prev:before,
+            .slick-next:before {
+                color: #000;
+            }
+            body{
+              margin:0;
+              padding:0;
+            }
+            .content-width{
+            width: 1040px;
+            margin-left:auto;
+            margin-right: auto;
+            }
+            .slider{
+              width: 100%;
+            }
+            ul{
+              padding:0;
+            }
+            img{
+              width: 100%;
+              height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+      <div class="content-width">
+        <h3>slickのスライドショー</h3>
+        <ul class="slider">
+          <li><img src="https://i.pinimg.com/originals/01/a8/24/01a8245e365deef832ce9580c1ba9298.jpg" alt="image01"></li>
+          <li><img src="https://www.pakutaso.com/shared/img/thumb/N749_sugasugasiiaozora_TP_V.jpg" alt="image02"></li>
+          <li><img src="https://storage.tenki.jp/storage/static-images/suppl/article/image/1/14/141/14131/1/large.jpg" alt="image03"></li>
+        </ul>
+      </div>
+      
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      
+      <script type="text/javascript">
+        $('.slider').slick({
+           autoplay:true,
+           autoplaySpeed:4000
+        });
+      </script>
+      
+    </body>
+</html>
